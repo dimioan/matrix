@@ -76,7 +76,7 @@ list_average = (sum(list_of_numbers)/len(list_of_numbers)) if len(list_of_number
 
 ## 11: (Task 0.5.11) Cartesian-product comprehension
 # Replace ... with a double list comprehension over ['A','B','C'] and [1,2,3]
-cartesian_product = ...
+cartesian_product = [[x, y] for x in ['A', 'B', 'C'] for y in [1,2,3]]
 
 
 
@@ -84,7 +84,7 @@ cartesian_product = ...
 LofL = [[.25, .75, .1], [-1, 0], [4, 4, 4, 4]]
 # Replace ... with a one-line expression of the form sum([sum(...) ... ]) that
 # includes a comprehension and evaluates to the sum of all numbers in all the lists.
-LofL_sum = ...
+LofL_sum = sum([sum(LofL[e]) for e in range(len(LofL))])
 
 
 
