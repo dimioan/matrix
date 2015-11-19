@@ -91,21 +91,21 @@ LofL_sum = sum([sum(LofL[e]) for e in range(len(LofL))])
 ## 13: (Task 0.5.14) Three-element tuples summing to zero
 S = {-4, -2, 1, 2, 5, 0}
 # Replace [ ... ] with a one-line list comprehension in which S appears
-zero_sum_list = [ ... ] 
+zero_sum_list = [(x, y, z) for x in S for y in S for z in S if sum((x,y,z))==0]
 
 
 
 ## 14: (Task 0.5.15) Nontrivial three-element tuples summing to zero
 S = {-4, -2, 1, 2, 5, 0}
 # Replace [ ... ] with a one-line list comprehension in which S appears
-exclude_zero_list = [ ... ]
+exclude_zero_list = [(x, y, z) for x in S for y in S for z in S if sum((x,y,z))==0 and not (x,y,z) == (0,0,0)]
 
 
 
 ## 15: (Task 0.5.16) One nontrivial three-element tuple summing to zero
 S = {-4, -2, 1, 2, 5, 0}
 # Replace ... with a one-line expression that uses a list comprehension in which S appears
-first_of_tuples_list = ...
+first_of_tuples_list = [(x, y, z) for x in S for y in S for z in S if sum((x,y,z))==0 and not (x,y,z) == (0,0,0)][0]
 
 
 
