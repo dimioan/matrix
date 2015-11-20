@@ -111,13 +111,13 @@ first_of_tuples_list = [(x, y, z) for x in S for y in S for z in S if sum((x,y,z
 
 ## 16: (Task 0.5.17) List and set differ
 # Assign to example_L a list such that len(example_L) != len(list(set(example_L)))
-example_L = [...]
+example_L = [0,4,4,4,5,5,5,5,13]
 
 
 
 ## 17: (Task 0.5.18) Odd numbers
 # Replace {...} with a one-line set comprehension over a range of the form range(n)
-odd_num_list_range = {...}
+odd_num_list_range = {i for i in range(100) if i%2 != 0}
 
 
 
