@@ -125,7 +125,7 @@ odd_num_list_range = {i for i in range(100) if i%2 != 0}
 # In the line below, replace ... with an expression that does not include a comprehension.
 # Instead, it should use zip and range.
 # Note: zip() does not return a list. It returns an 'iterator of tuples'
-range_and_zip = ...
+range_and_zip = list(zip(range(5), ['A', 'B', 'C', 'D', 'E']))
 
 
 
@@ -135,7 +135,7 @@ B = [1, 15, 20]
 # Replace [...] with a one-line comprehension that uses zip together with the variables A and B.
 # The comprehension should evaluate to a list whose ith element is the ith element of
 # A plus the ith element of B.
-list_sum_zip = [...]
+list_sum_zip = [A + B for A, B in zip(A, B)]
 
 
 
