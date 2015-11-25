@@ -144,7 +144,7 @@ dlist = [{'James':'Sean', 'director':'Terence'}, {'James':'Roger', 'director':'L
 k = 'James'
 # Replace [...] with a one-line comprehension that uses dlist and k
 # and that evaluates to ['Sean','Roger','Pierce']
-value_list = [...]
+value_list = [dlist[e][k] for e in range(len(dlist))]
 
 
 
@@ -152,9 +152,9 @@ value_list = [...]
 dlist = [{'Bilbo':'Ian','Frodo':'Elijah'},{'Bilbo':'Martin','Thorin':'Richard'}]
 k = 'Bilbo'
 #Replace [...] with a one-line comprehension 
-value_list_modified_1 = [...] # <-- Use the same expression here
+value_list_modified_1 = [dlist[e].get(k, 'NOT PRESENT') for e in range(len(dlist))] #[dlist[e][k] if k in dlist[e] else "NOT PRESENT" for e in range(len(dlist))] # <-- Use the same expression here
 k = 'Frodo'
-value_list_modified_2 = [...] # <-- as you do here
+value_list_modified_2 = [dlist[e].get(k, 'NOT PRESENT') for e in range(len(dlist))] #[dlist[e][k] if k in dlist[e] else "NOT PRESENT" for e in range(len(dlist))] # <-- as you do here
 
 
 
