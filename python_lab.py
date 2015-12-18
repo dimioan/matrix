@@ -160,14 +160,14 @@ value_list_modified_2 = [dlist[e].get(k, 'NOT PRESENT') for e in range(len(dlist
 
 ## 22: (Task 0.5.23) A dictionary mapping integers to their squares
 # Replace {...} with a one-line dictionary comprehension
-square_dict = {...}
+square_dict = {i:i**2 for i in range(100)}
 
 
 
 ## 23: (Task 0.5.24) Making the identity function
 D = {'red','white','blue'}
 # Replace {...} with a one-line dictionary comprehension
-identity_dict = {...}
+identity_dict = {i:i for i in D}
 
 
 
@@ -177,7 +177,7 @@ digits = set(range(base))
 # Replace { ... } with a one-line dictionary comprehension
 # Your comprehension should use the variables 'base' and 'digits' so it will work correctly if these
 # are assigned different values (e.g. base = 2 and digits = {0,1})
-representation_dict = { ... }
+representation_dict = {}
 
 
 
