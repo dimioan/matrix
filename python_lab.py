@@ -185,7 +185,7 @@ representation_dict = {}
 id2salary = {0:1000.0, 1:1200.50, 2:990}
 names = ['Larry', 'Curly', 'Moe']
 # Replace { ... } with a one-line dictionary comprehension that uses id2salary and names.
-listdict2dict = { ... }
+listdict2dict = { names[i]:id2salary[i] for i in range(len(names))}
 
 
 
